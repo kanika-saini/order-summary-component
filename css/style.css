@@ -1,0 +1,138 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; /* 10 px*/
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.main{
+   
+    background-color:hsl(225, 100%, 94%) ;
+}
+
+.card-container{
+     height: 100vh;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.card{
+    width: 36rem;
+     background-color: #fff;
+     border-radius: 1.6rem;
+     overflow: hidden;
+}
+.card__image img{
+    display: block;
+    width: 36rem;
+    margin-bottom: 1rem;
+}
+.card__order-summary{
+    padding: 2.7rem 3rem 4rem 3rem;
+}
+.card__heading{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+.card__paragraph{
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    margin: 1.3rem 0 2.5rem 0;
+}
+.card__order-details{
+    display: flex;
+    align-items: center;
+    background-color: hsla(225, 100%, 94%, .5);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 2rem 0 2.5rem 0;
+}
+.card__order-details__music-icon{
+margin-right: .8rem;
+}
+.card__order-details__plan{
+margin-right: auto;
+}
+.details-heading{
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+    padding-bottom: .4rem;
+    margin-left: .8rem;
+    
+}
+.plan__paragraph{
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+.plan-button{
+    color:  hsl(245, 75%, 52%);
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    font-weight: 900;
+    padding-bottom: 1px;
+}
+.plan-button:hover{
+    color:  hsl(245, 75%, 52%,.7);
+     text-decoration: none;
+}
+.payment{
+    margin-bottom: 2rem;
+}
+.payment__button{
+    width: 100%;
+    border: none;
+    background-color:  hsl(245, 75%, 52%);
+    color: #fff;
+    font-weight: 900;
+    padding: 1.6rem 3.2rem;
+    border-radius: 1.1rem;
+    font-size: 1.4rem;
+    /* box-shadow: 0 1rem 3rem rgba(0,0,0,.2); */
+    box-shadow: 0 1rem 1rem hsla(245, 75%, 52%, .25);
+}
+.payment__button:hover{
+   
+    background-color:  hsl(245, 75%, 52%,.7);
+
+}
+.cancel__button{
+       font-size: 1.7rem;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+    margin-top: 1rem;  
+  
+    transition: all .4s;
+}
+.cancel__button:hover{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+   
+}
+
+/* 450px*/
+@media screen and (max-width: 29em) {
+    
+html {
+    font-size: 50%; /* 8px*/
+  }
+  .card-container{
+    background-image: url(../images/pattern-background-mobile.svg);
+  }
+}
