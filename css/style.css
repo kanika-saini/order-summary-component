@@ -55,6 +55,7 @@ body {
     font-weight: 500;
     color: hsl(224, 23%, 55%);
     margin: 1.3rem 0 2.5rem 0;
+    line-height: 1.4;
 }
 .card__order-details{
     display: flex;
